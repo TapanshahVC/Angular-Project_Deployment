@@ -1,0 +1,38 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+	<h1>User Club</h1>
+  <span class="spacerr"></span>
+    <span class="logout">
+      <button  mat-mini-fab matTooltip="{{pfn}}" [matMenuTriggerFor]="menu" color="primary" [matTooltipPosition]="position.value">
+       <mat-icon>perm_identity</mat-icon>
+     </button>
+     <mat-menu #menu="matMenu">
+         <button mat-menu-item (click)="logout()">
+           <mat-icon>power_settings_new</mat-icon>
+           <span>Logout</span>
+         </button>
+     </mat-menu>
+   </span>
+</mat-toolbar>
+<div>
+  <div fxFlex="4" class="icon">
+    <br>
+    <br>
+    <mat-icon>home</mat-icon>
+    <br>
+    <br>
+    <br>
+    <mat-icon>perm_identity</mat-icon>
+    <br>
+    <br>
+	</div>
+	<mat-drawer-container>
+    <mat-drawer #snav [mode]="'side'">
+			<mat-nav-list>
+				<a mat-list-item routerLink="userdash" >Home</a>
+				<a mat-list-item routerLink="userlist" >User List</a>
+			</mat-nav-list>
+		</mat-drawer>
+	</mat-drawer-container>
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,31 @@
+table {
+    width: 100%;
+  }
+  h1{
+    text-align: center;
+    font-size: 30px;
+}
+.mat-cell{
+    // font-size:18px;
+    font-family: Verdana,Sans-Serif;
+    display: table-cell;
+    text-align: center;
+    height: 48px;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    border-left: 2px solid rgba(0, 0, 0, 0.12);
+    border-right: 2px solid rgba(0, 0, 0, 0.12);
+    }
+    .mat-header-cell{
+        // font-size:20px;
+    font-family: Verdana,Sans-Serif;
+    display: table-cell;
+    text-align: center;
+    height: 48px;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    border-left: 2px solid rgba(0, 0, 0, 0.12);
+    border-right: 2px solid rgba(0, 0, 0, 0.12);
+    }

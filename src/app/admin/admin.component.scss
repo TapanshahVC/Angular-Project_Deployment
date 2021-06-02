@@ -1,0 +1,42 @@
+.spacer{
+    width: 50px;
+}
+.spacerr{
+    width: 1700px;
+}
+mat-nav-list{
+    height: 817px;
+    background-color:#7786d6 ;
+    width: 130px;
+    color:#3f51b5; 
+}
+.icon{
+    height: 817px;
+    text-align: center;
+    background-color: #3f51b5;
+}
+a{
+    margin-top: 10px;
+   text-shadow: 03px 01px 10px currentColor;
+}
+mat-list-item{
+    background-color:#3f51b5; 
+}
+.logout{
+    color: red;
+}
+.ylb-app-content{
+    padding: 16px;
+}
+  .logout{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    vertical-align: bottom;
+  }
+  .mat-menu-item:hover{
+    color:#3f51b5;
+  }
+  .mat-menu-item:hover .mat-icon{
+    color: #3f51b5;
+  }

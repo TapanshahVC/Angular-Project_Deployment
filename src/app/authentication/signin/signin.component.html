@@ -1,0 +1,32 @@
+<div class="container">
+  <form #userData="ngForm" (ngSubmit)="onSubmit(userData.value)">
+    <h1>Enter the Club</h1>
+
+    <div class="row">
+      <div class="col-12">
+        <mat-form-field appearance="outline">
+          <mat-label>Email ID</mat-label>
+          <input matInput placeholder="Enter Your Email" ngModel name="Email" [(ngModel)]= "email" required>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-12">
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" placeholder="Enter Your Password" [(ngModel)]="password" name="Password" ngModel required>
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+    </div>
+    <br>
+    <div class="col-12">
+        <button mat-raised-button color="primary" class="btn" [disabled]= "!userData.valid">Sign In</button>
+    </div>
+  </form>
+</div>

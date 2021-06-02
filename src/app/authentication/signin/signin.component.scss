@@ -1,0 +1,30 @@
+.mat-form-field {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    min-width: 100%;
+}
+form{
+    text-align: center;
+}
+mat-label{
+    font-size: 23px;
+}
+input.mat-input-element {
+    margin-top: 0px;
+    font-size: 20px;
+}
+.mat-form-field[_ngcontent-fbx-c88] {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    min-width: 100%;
+    font-size: 20px;
+}
+.btn:hover{
+    color: white;
+    background-color: rgb(170, 44, 86);
+}
+.btn{
+    padding: 5px 50px;
+}
